@@ -115,7 +115,7 @@ class _HomePageState extends State<HomePage> {
           BottomNavigationBarItem(
             label: "Home",
               icon: Icon((Icons.home),
-                  semanticLabel: 'Home', color: Colors.white)),
+                  semanticLabel: 'Home', color: Colors.grey)),
           BottomNavigationBarItem(
               label: "My Goals",
               icon: Icon((Icons.home),
