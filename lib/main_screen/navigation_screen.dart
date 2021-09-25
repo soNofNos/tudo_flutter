@@ -41,7 +41,7 @@ class _NavigationPageState extends State<NavigationPage> {
         ),
         actions: const [
           Padding(
-            padding: EdgeInsets.only(right: 12.0),
+            padding: EdgeInsets.only(right: 15.0),
             child: Icon(
               Icons.notifications_none_rounded,
               color: Colors.black,
