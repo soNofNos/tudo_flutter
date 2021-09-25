@@ -97,43 +97,53 @@ class HomePage extends StatefulWidget {
 // }
 
 class _HomePageState extends State<HomePage> {
-  int _selectedIndex = 0;
-  List<int> _history = [0];
+  // int _selectedIndex = 0;
+  // List<int> _history = [0];
   int _currentIndex = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.white,
-        appBar: AppBar(
-          title: const Text('Todo'),
-          centerTitle: true,
-        ),
-        body: const Center(
-          child: Text("Home"),
-        ),
-        bottomNavigationBar: BottomNavigationBar(items: const [
-          BottomNavigationBarItem(
-            label: "Home",
-              icon: Icon((Icons.home),
-                  semanticLabel: 'Home', color: Colors.grey)),
-          BottomNavigationBarItem(
-              label: "My Goals",
-              icon: Icon((Icons.home),
-                  semanticLabel: 'Home', color: Colors.white)),
-          BottomNavigationBarItem(
-              label: "Explore",
-              icon: Icon((Icons.home),
-                  semanticLabel: 'Home', color: Colors.blue)),
-          BottomNavigationBarItem(
-              label: "Invite",
-              icon: Icon((Icons.home),
-                  semanticLabel: 'Home', color: Colors.white)),
-          BottomNavigationBarItem(
-              label: "Account",
-              icon: Icon((Icons.home),
-                  semanticLabel: 'Home', color: Colors.white))
-        ]
-        ),
+      backgroundColor: Colors.white,
+      appBar: AppBar(
+        title: const Text('Todo'),
+        centerTitle: true,
+      ),
+      body: const Center(
+        child: Text("Home"),
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+          currentIndex: _currentIndex,
+          backgroundColor: Colors.white,
+          selectedItemColor: const Color.fromARGB(255,120,51,213),
+          onTap: (index) {
+            setState(() {
+              _currentIndex = index;
+            });
+          },
+          items: const [
+            BottomNavigationBarItem(
+                label: "Home",
+                icon: Icon((Icons.home),
+                    color: Color.fromARGB(255, 214, 207, 218))),
+            BottomNavigationBarItem(
+                label: "My Goals",
+                backgroundColor: Colors.amber,
+                icon: Icon((Icons.wrap_text_rounded),
+                    color: Color.fromARGB(255, 214, 207, 218))),
+            BottomNavigationBarItem(
+                label: "Explore",
+                backgroundColor: Colors.green,
+                icon: Icon((Icons.navigation),
+                    color: Color.fromARGB(255, 214, 207, 218))),
+            BottomNavigationBarItem(
+                label: "Invite",
+                icon: Icon((Icons.person_add_alt_1_rounded),
+                    color: Color.fromARGB(255, 214, 207, 218))),
+            BottomNavigationBarItem(
+                label: "Account",
+                icon: Icon((Icons.person),
+                    color: Color.fromARGB(255, 214, 207, 218)))
+          ]),
     );
   }
 }
