@@ -14,7 +14,7 @@ class _HomeState extends State<Home> {
     return Scaffold(
       appBar: AppBar(
         flexibleSpace: const Align(
-          alignment: Alignment.bottomRight,
+          alignment: Alignment.topRight,
           child: Text("Hi"),
         ),
         toolbarHeight: 120.0,
@@ -34,7 +34,7 @@ class _HomeState extends State<Home> {
           child: Container(
             height: MediaQuery.of(context).size.height * 0.3,
             width: MediaQuery.of(context).size.width * 0.95,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               borderRadius: BorderRadius.only(topLeft: Radius.circular(30.0), bottomLeft: Radius.circular(30.0)),
               gradient: LinearGradient(
                   begin: Alignment.topLeft,
@@ -46,7 +46,39 @@ class _HomeState extends State<Home> {
               ]
               )
             ),
-            child: const Text("GHighs"),
+            child: Column(
+              children: [
+                const Center(child: Text("GHighs")),
+                Container(
+                  color: Colors.green,
+                  height: 60.0,
+                  width: 100.0,
+                  child: Padding(
+                    padding: const EdgeInsets.only(top: 8.0,bottom: 8.0, left:7.0, right: 12),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        const Icon(Icons.account_balance_wallet_rounded),
+                        const Spacer(),
+                        Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.end,
+                          children: const [
+                            Text("N300", style: TextStyle(
+                              fontSize: 10.0,
+                            ),),
+                            Text("Wallet",style: TextStyle(
+                              fontSize: 10.0,
+                            ),),
+                          ],
+                        )
+                      ],
+                    ),
+                  ),
+                ),
+              ],
+            ),
           ),
         ),
       ]),

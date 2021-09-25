@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/rendering.dart';
 import 'package:tudo_flutter/main_screen/account_screen.dart';
 import 'package:tudo_flutter/main_screen/explore_screen.dart';
 import 'package:tudo_flutter/main_screen/feed_screen.dart';
@@ -41,12 +42,13 @@ class _NavigationPageState extends State<NavigationPage> {
         actions: const [
           Padding(
             padding: EdgeInsets.only(right: 12.0),
-            child: Icon(Icons.notifications_none_rounded, color: Colors.black, ),
+            child: Icon(
+              Icons.notifications_none_rounded,
+              color: Colors.black,
+            ),
           )
         ],
-        bottom: ,
         elevation: 0.0,
-
       ),
       body: IndexedStack(index: _currentIndex, children: _screens),
       bottomNavigationBar: BottomNavigationBar(
