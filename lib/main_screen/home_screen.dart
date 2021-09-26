@@ -162,12 +162,13 @@ class _HomeState extends State<Home> {
                     color: Colors.green,
                     height: 150.0,
                     child:
-                        const Align(alignment: Alignment.topLeft, child: Text("Create"))),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 8.0),
                 child: Row(
                   children: [
                     Container(
+                      height: MediaQuery.of(context).size.width * 0.35,
+                      width: MediaQuery.of(context).size.width * 0.35,
                       color: Colors.white,
                       child: Column(
                         children: <Widget>[
@@ -177,7 +178,7 @@ class _HomeState extends State<Home> {
                     ),
                   ],
                 ),
-              )
+              ))
               ],
             ),
           )
