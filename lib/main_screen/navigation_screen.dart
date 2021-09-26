@@ -3,7 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/rendering.dart';
 import 'package:tudo_flutter/main_screen/account_screen.dart';
 import 'package:tudo_flutter/main_screen/explore_screen.dart';
-import 'package:tudo_flutter/main_screen/feed_screen.dart';
+import 'package:tudo_flutter/main_screen/goals_screen.dart';
 import 'package:tudo_flutter/main_screen/home_screen.dart';
 import 'package:tudo_flutter/main_screen/invite_screen.dart';
 
@@ -17,12 +17,12 @@ class NavigationPage extends StatefulWidget {
 class _NavigationPageState extends State<NavigationPage> {
   final _screens = [
     const Home(),
-    const Feed(),
+    const Goals(),
     const Explore(),
     const Invite(),
     const Account(),
   ];
-  int _currentIndex = 0;
+  int _currentIndex = 1;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -55,8 +55,8 @@ class _NavigationPageState extends State<NavigationPage> {
           currentIndex: _currentIndex,
           backgroundColor: Colors.white,
           showUnselectedLabels: true,
-          selectedItemColor: const Color.fromARGB(255, 120, 51, 213),
-          unselectedItemColor: const Color.fromARGB(255, 214, 207, 218),
+          selectedItemColor: const Color(0xFF8740FF),
+          unselectedItemColor: const  Color(0xFFB3B0CD),
           onTap: (index) {
             setState(() {
               _currentIndex = index;

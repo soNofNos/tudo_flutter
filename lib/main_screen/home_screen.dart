@@ -92,7 +92,7 @@ class _HomeState extends State<Home> {
           Align(
             alignment: Alignment.topRight,
             child: Container(
-              height: 180.0,
+              height: MediaQuery.of(context).size.height * 0.25,
               width: MediaQuery.of(context).size.width * 0.95,
               decoration: const BoxDecoration(
                   borderRadius: BorderRadius.only(
@@ -106,51 +106,55 @@ class _HomeState extends State<Home> {
                         // Color.fromARGB(255,143,76,235),
                         Color.fromARGB(255, 113, 31, 236),
                         Color(0xFF6337FC),
-                      ])),
+                      ])
+              ),
               child: Column(
-                children: [
-                  const Center(child: Text("GHighs")),
-                  Container(
-                    decoration: BoxDecoration(
-                      color: Colors.green,
-                      borderRadius: BorderRadius.circular(5.0),
-                    ),
-                    height: 35.0,
-                    width: 75.0,
-                    child: Padding(
-                      padding: const EdgeInsets.only(
-                          top: 5.0, bottom: 5.0, left: 2.0, right: 10),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          const Icon(Icons.account_balance_wallet_rounded),
-                          const Spacer(),
-                          Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            crossAxisAlignment: CrossAxisAlignment.end,
-                            children: const [
-                              Text(
-                                "N300",
-                                style: TextStyle(
-                                  fontSize: 10.0,
-                                ),
-                              ),
-                              Text(
-                                "Wallet",
-                                style: TextStyle(
-                                  fontSize: 10.0,
-                                ),
-                              ),
-                            ],
-                          )
-                        ],
-                      ),
-                    ),
-                  ),
+                children: const [
+                  // const Center(child: Text("GHighs")),
+                  // Container(
+                  //   decoration: BoxDecoration(
+                  //     color: Colors.green,
+                  //     borderRadius: BorderRadius.circular(5.0),
+                  //   ),
+                  //   height: 35.0,
+                  //   width: 75.0,
+                  //   child: Padding(
+                  //     padding: const EdgeInsets.only(
+                  //         top: 5.0, bottom: 5.0, left: 2.0, right: 10),
+                  //     child: Row(
+                  //       mainAxisAlignment: MainAxisAlignment.center,
+                  //       crossAxisAlignment: CrossAxisAlignment.center,
+                  //       children: [
+                  //         const Icon(Icons.account_balance_wallet_rounded),
+                  //         const Spacer(),
+                  //         Column(
+                  //           mainAxisAlignment: MainAxisAlignment.center,
+                  //           crossAxisAlignment: CrossAxisAlignment.end,
+                  //           children: const [
+                  //             Text(
+                  //               "N300",
+                  //               style: TextStyle(
+                  //                 fontSize: 10.0,
+                  //               ),
+                  //             ),
+                  //             Text(
+                  //               "Wallet",
+                  //               style: TextStyle(
+                  //                 fontSize: 10.0,
+                  //               ),
+                  //             ),
+                  //           ],
+                  //         )
+                  //       ],
+                  //     ),
+                  //   ),
+                  // ),
                 ],
               ),
             ),
+          ),
+          SizedBox(
+            height: MediaQuery.of(context).size.width * 0.035,
           ),
           Padding(
             padding: EdgeInsets.symmetric(
@@ -159,8 +163,8 @@ class _HomeState extends State<Home> {
             child: Column(
               children: [
                 Container(
-                    color: Colors.green,
-                    height: MediaQuery.of(context).size.width * 0.6,
+                    color: Colors.transparent,
+                    height: MediaQuery.of(context).size.width * 0.525,
                     child: Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 8.0),
                       child: Column(
@@ -168,7 +172,7 @@ class _HomeState extends State<Home> {
                           const Align(
                               alignment: Alignment.topLeft,
                               child: Text("Create")),
-
+                          const Spacer(),
                           Row(
                             children: [
                               Container(
@@ -179,11 +183,11 @@ class _HomeState extends State<Home> {
                                   borderRadius: BorderRadius.circular(10.0),
                                 ),
                                 child: Column(
-                                  // mainAxisAlignment: MainAxisAlignment.center,
+                                  mainAxisAlignment: MainAxisAlignment.center,
                                   crossAxisAlignment: CrossAxisAlignment.center,
                                   children: <Widget>[
                                     Column(
-                                      mainAxisAlignment: MainAxisAlignment.end,
+                                      mainAxisAlignment: MainAxisAlignment.center,
                                       crossAxisAlignment: CrossAxisAlignment.center,
                                       children: [
                                         Container(
@@ -200,13 +204,11 @@ class _HomeState extends State<Home> {
                                             color: Colors.white,
                                           ),
                                         ),
-                                      ],
-                                    ),
-                                    Column(
-                                      mainAxisAlignment: MainAxisAlignment.center,
-                                      crossAxisAlignment: CrossAxisAlignment.center,
-                                      children: const [
-                                        Text("Create a \n Personal goal"),
+                                        SizedBox(
+                                          height: MediaQuery.of(context).size.width * 0.04,
+                                        ),
+                                        const Text("Create a"),
+                                        const Text("Personal Goal"),
                                       ],
                                     ),
                                   ],
@@ -214,18 +216,17 @@ class _HomeState extends State<Home> {
                               ),
                               const Spacer(),
                               Container(
-                                height: MediaQuery.of(context).size.width * 0.3,
+                                height: MediaQuery.of(context).size.width * 0.4,
                                 width: MediaQuery.of(context).size.width * 0.4,
                                 decoration: BoxDecoration(
                                   color: Colors.white,
                                   borderRadius: BorderRadius.circular(10.0),
                                 ),
                                 child: Column(
-                                  // mainAxisAlignment: MainAxisAlignment.center,
+                                  mainAxisAlignment: MainAxisAlignment.center,
                                   crossAxisAlignment: CrossAxisAlignment.center,
                                   children: <Widget>[
                                     Column(
-                                      mainAxisAlignment: MainAxisAlignment.end,
                                       crossAxisAlignment: CrossAxisAlignment.center,
                                       children: [
                                         Container(
@@ -238,28 +239,145 @@ class _HomeState extends State<Home> {
                                               BorderRadius.circular(18),),
                                           child: const Icon(
                                             Icons.groups_rounded,
-                                            size: 19,
+                                            size: 22.5,
                                             color: Colors.white,
                                           ),
                                         ),
-                                      ],
-                                    ),
-                                    Column(
-                                      mainAxisAlignment: MainAxisAlignment.center,
-                                      crossAxisAlignment: CrossAxisAlignment.center,
-                                      children: const [
-                                        Text("Create a \n Group goal"),
+                                        SizedBox(
+                                          height: MediaQuery.of(context).size.width * 0.04,
+                                        ),
+                                        const Text("Create a"),
+                                        const Text("Group goal"),
                                       ],
                                     ),
                                   ],
                                 ),
                               ),
-
                             ],
                           ),
+                          const Spacer(),
                         ],
                       ),
-                    ))
+                    )),
+                SizedBox(
+                  height: MediaQuery.of(context).size.width * 0.02,
+                ),
+                Container(
+                    color: Colors.transparent,
+                    height: MediaQuery.of(context).size.width * 0.225,
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                      child: Column(
+                        children: [
+                          const Align(
+                              alignment: Alignment.topLeft,
+                              child: Text("Explore")),
+                          const Spacer(),
+                          Row(
+                            children: [
+                              Container(
+                                height: MediaQuery.of(context).size.width * 0.115,
+                                width: MediaQuery.of(context).size.width * 0.4,
+                                decoration: BoxDecoration(
+                                  color: Colors.white,
+                                  borderRadius: BorderRadius.circular(MediaQuery.of(context).size.width * 0.1),
+                                ),
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: <Widget>[
+                                    Row(
+                                      crossAxisAlignment: CrossAxisAlignment.center,
+                                      children: [
+                                        Align(
+                                          alignment: Alignment.centerLeft,
+                                          child: Padding(
+                                            padding: EdgeInsets.only(left: MediaQuery.of(context).size.width * 0.015,),
+                                            child: Container(
+                                              height: MediaQuery.of(context).size.width * 0.09,
+                                              width: MediaQuery.of(context).size.width * 0.09,
+                                              decoration: BoxDecoration(
+                                                  color: const Color(0xFFFCE09E),
+                                                  borderRadius:
+                                                  BorderRadius.circular(MediaQuery.of(context).size.width * 0.09,)),
+                                              child: const Icon(
+                                                Icons.wrap_text_rounded,
+                                                size: 23,
+                                                color: Colors.pink,
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                        SizedBox(
+                                          width: MediaQuery.of(context).size.width * 0.04,
+                                        ),
+                                        const Text("My Goals"),
+                                      ],
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              const Spacer(),
+                              Container(
+                                height: MediaQuery.of(context).size.width * 0.115,
+                                width: MediaQuery.of(context).size.width * 0.4,
+                                decoration: BoxDecoration(
+                                  color: Colors.white,
+                                  borderRadius: BorderRadius.circular(MediaQuery.of(context).size.width * 0.1),
+                                      gradient: const LinearGradient(
+                                          begin: Alignment.topLeft,
+                                          end: Alignment.bottomRight,
+                                          colors: [
+                                            Color(0xFF9A3FFA),
+                                            // Color.fromARGB(255,143,76,235),
+                                            // Color.fromARGB(255, 113, 31, 236),
+                                            Color(0xFF6337FC),
+                                          ])
+
+                                ),
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: <Widget>[
+                                    Row(
+                                      crossAxisAlignment: CrossAxisAlignment.center,
+                                      children: [
+                                        Align(
+                                          alignment: Alignment.centerLeft,
+                                          child: Padding(
+                                            padding: EdgeInsets.only(left: MediaQuery.of(context).size.width * 0.025,),
+                                            child: Container(
+                                              height: MediaQuery.of(context).size.width * 0.07,
+                                              width: MediaQuery.of(context).size.width * 0.07,
+                                              decoration: BoxDecoration(
+                                                  color: Colors.white,
+                                                  borderRadius:
+                                                  BorderRadius.circular(MediaQuery.of(context).size.width * 0.04,)),
+                                              child: const Icon(
+                                                Icons.navigation,
+                                                size: 18,
+                                                color:Color(0xFF9A3FFA),
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                        SizedBox(
+                                          width: MediaQuery.of(context).size.width * 0.04,
+                                        ),
+                                        const Text("Explore Tudo", style: TextStyle(
+                                          color: Colors.white,
+                                        ),),
+                                      ],
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                          const Spacer(),
+                        ],
+                      ),
+                    )),
               ],
             ),
           )
