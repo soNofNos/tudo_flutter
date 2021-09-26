@@ -160,25 +160,106 @@ class _HomeState extends State<Home> {
               children: [
                 Container(
                     color: Colors.green,
-                    height: 150.0,
-                    child:
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 8.0),
-                child: Row(
-                  children: [
-                    Container(
-                      height: MediaQuery.of(context).size.width * 0.35,
-                      width: MediaQuery.of(context).size.width * 0.35,
-                      color: Colors.white,
+                    height: MediaQuery.of(context).size.width * 0.6,
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 8.0),
                       child: Column(
-                        children: <Widget>[
+                        children: [
+                          const Align(
+                              alignment: Alignment.topLeft,
+                              child: Text("Create")),
 
+                          Row(
+                            children: [
+                              Container(
+                                height: MediaQuery.of(context).size.width * 0.4,
+                                width: MediaQuery.of(context).size.width * 0.4,
+                                decoration: BoxDecoration(
+                                  color: Colors.white,
+                                  borderRadius: BorderRadius.circular(10.0),
+                                ),
+                                child: Column(
+                                  // mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: <Widget>[
+                                    Column(
+                                      mainAxisAlignment: MainAxisAlignment.end,
+                                      crossAxisAlignment: CrossAxisAlignment.center,
+                                      children: [
+                                        Container(
+                                          height: 28.0,
+                                          width: 28.0,
+                                          decoration: BoxDecoration(
+                                              color: const Color.fromARGB(
+                                                  255, 113, 31, 236),
+                                              borderRadius:
+                                                  BorderRadius.circular(14)),
+                                          child: const Icon(
+                                            Icons.add_rounded,
+                                            size: 19,
+                                            color: Colors.white,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    Column(
+                                      mainAxisAlignment: MainAxisAlignment.center,
+                                      crossAxisAlignment: CrossAxisAlignment.center,
+                                      children: const [
+                                        Text("Create a \n Personal goal"),
+                                      ],
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              const Spacer(),
+                              Container(
+                                height: MediaQuery.of(context).size.width * 0.3,
+                                width: MediaQuery.of(context).size.width * 0.4,
+                                decoration: BoxDecoration(
+                                  color: Colors.white,
+                                  borderRadius: BorderRadius.circular(10.0),
+                                ),
+                                child: Column(
+                                  // mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: <Widget>[
+                                    Column(
+                                      mainAxisAlignment: MainAxisAlignment.end,
+                                      crossAxisAlignment: CrossAxisAlignment.center,
+                                      children: [
+                                        Container(
+                                          height: 36.0,
+                                          width: 36.0,
+                                          decoration: BoxDecoration(
+                                              color: const Color.fromARGB(
+                                                  255, 113, 31, 236),
+                                              borderRadius:
+                                              BorderRadius.circular(18),),
+                                          child: const Icon(
+                                            Icons.groups_rounded,
+                                            size: 19,
+                                            color: Colors.white,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    Column(
+                                      mainAxisAlignment: MainAxisAlignment.center,
+                                      crossAxisAlignment: CrossAxisAlignment.center,
+                                      children: const [
+                                        Text("Create a \n Group goal"),
+                                      ],
+                                    ),
+                                  ],
+                                ),
+                              ),
+
+                            ],
+                          ),
                         ],
                       ),
-                    ),
-                  ],
-                ),
-              ))
+                    ))
               ],
             ),
           )
