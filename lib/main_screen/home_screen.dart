@@ -106,8 +106,7 @@ class _HomeState extends State<Home> {
                         // Color.fromARGB(255,143,76,235),
                         Color.fromARGB(255, 113, 31, 236),
                         Color(0xFF6337FC),
-                      ])
-              ),
+                      ])),
               child: Column(
                 children: const [
                   // const Center(child: Text("GHighs")),
@@ -187,8 +186,10 @@ class _HomeState extends State<Home> {
                                   crossAxisAlignment: CrossAxisAlignment.center,
                                   children: <Widget>[
                                     Column(
-                                      mainAxisAlignment: MainAxisAlignment.center,
-                                      crossAxisAlignment: CrossAxisAlignment.center,
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.center,
                                       children: [
                                         Container(
                                           height: 28.0,
@@ -205,7 +206,10 @@ class _HomeState extends State<Home> {
                                           ),
                                         ),
                                         SizedBox(
-                                          height: MediaQuery.of(context).size.width * 0.04,
+                                          height: MediaQuery.of(context)
+                                                  .size
+                                                  .width *
+                                              0.04,
                                         ),
                                         const Text("Create a"),
                                         const Text("Personal Goal"),
@@ -227,16 +231,18 @@ class _HomeState extends State<Home> {
                                   crossAxisAlignment: CrossAxisAlignment.center,
                                   children: <Widget>[
                                     Column(
-                                      crossAxisAlignment: CrossAxisAlignment.center,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.center,
                                       children: [
                                         Container(
                                           height: 36.0,
                                           width: 36.0,
                                           decoration: BoxDecoration(
-                                              color: const Color.fromARGB(
-                                                  255, 113, 31, 236),
-                                              borderRadius:
-                                              BorderRadius.circular(18),),
+                                            color: const Color.fromARGB(
+                                                255, 113, 31, 236),
+                                            borderRadius:
+                                                BorderRadius.circular(18),
+                                          ),
                                           child: const Icon(
                                             Icons.groups_rounded,
                                             size: 22.5,
@@ -244,7 +250,10 @@ class _HomeState extends State<Home> {
                                           ),
                                         ),
                                         SizedBox(
-                                          height: MediaQuery.of(context).size.width * 0.04,
+                                          height: MediaQuery.of(context)
+                                                  .size
+                                                  .width *
+                                              0.04,
                                         ),
                                         const Text("Create a"),
                                         const Text("Group goal"),
@@ -276,30 +285,50 @@ class _HomeState extends State<Home> {
                           Row(
                             children: [
                               Container(
-                                height: MediaQuery.of(context).size.width * 0.115,
+                                height:
+                                    MediaQuery.of(context).size.width * 0.115,
                                 width: MediaQuery.of(context).size.width * 0.4,
                                 decoration: BoxDecoration(
                                   color: Colors.white,
-                                  borderRadius: BorderRadius.circular(MediaQuery.of(context).size.width * 0.1),
+                                  borderRadius: BorderRadius.circular(
+                                      MediaQuery.of(context).size.width * 0.1),
                                 ),
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   crossAxisAlignment: CrossAxisAlignment.center,
                                   children: <Widget>[
                                     Row(
-                                      crossAxisAlignment: CrossAxisAlignment.center,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.center,
                                       children: [
                                         Align(
                                           alignment: Alignment.centerLeft,
                                           child: Padding(
-                                            padding: EdgeInsets.only(left: MediaQuery.of(context).size.width * 0.015,),
+                                            padding: EdgeInsets.only(
+                                              left: MediaQuery.of(context)
+                                                      .size
+                                                      .width *
+                                                  0.015,
+                                            ),
                                             child: Container(
-                                              height: MediaQuery.of(context).size.width * 0.09,
-                                              width: MediaQuery.of(context).size.width * 0.09,
+                                              height: MediaQuery.of(context)
+                                                      .size
+                                                      .width *
+                                                  0.09,
+                                              width: MediaQuery.of(context)
+                                                      .size
+                                                      .width *
+                                                  0.09,
                                               decoration: BoxDecoration(
-                                                  color: const Color(0xFFFCE09E),
+                                                  color:
+                                                      const Color(0xFFFCE09E),
                                                   borderRadius:
-                                                  BorderRadius.circular(MediaQuery.of(context).size.width * 0.09,)),
+                                                      BorderRadius.circular(
+                                                    MediaQuery.of(context)
+                                                            .size
+                                                            .width *
+                                                        0.09,
+                                                  )),
                                               child: const Icon(
                                                 Icons.wrap_text_rounded,
                                                 size: 23,
@@ -309,7 +338,10 @@ class _HomeState extends State<Home> {
                                           ),
                                         ),
                                         SizedBox(
-                                          width: MediaQuery.of(context).size.width * 0.04,
+                                          width: MediaQuery.of(context)
+                                                  .size
+                                                  .width *
+                                              0.04,
                                         ),
                                         const Text("My Goals"),
                                       ],
@@ -319,54 +351,78 @@ class _HomeState extends State<Home> {
                               ),
                               const Spacer(),
                               Container(
-                                height: MediaQuery.of(context).size.width * 0.115,
+                                height:
+                                    MediaQuery.of(context).size.width * 0.115,
                                 width: MediaQuery.of(context).size.width * 0.4,
                                 decoration: BoxDecoration(
-                                  color: Colors.white,
-                                  borderRadius: BorderRadius.circular(MediaQuery.of(context).size.width * 0.1),
-                                      gradient: const LinearGradient(
-                                          begin: Alignment.topLeft,
-                                          end: Alignment.bottomRight,
-                                          colors: [
-                                            Color(0xFF9A3FFA),
-                                            // Color.fromARGB(255,143,76,235),
-                                            // Color.fromARGB(255, 113, 31, 236),
-                                            Color(0xFF6337FC),
-                                          ])
-
-                                ),
+                                    color: Colors.white,
+                                    borderRadius: BorderRadius.circular(
+                                        MediaQuery.of(context).size.width *
+                                            0.1),
+                                    gradient: const LinearGradient(
+                                        begin: Alignment.topLeft,
+                                        end: Alignment.bottomRight,
+                                        colors: [
+                                          Color(0xFF9A3FFA),
+                                          // Color.fromARGB(255,143,76,235),
+                                          // Color.fromARGB(255, 113, 31, 236),
+                                          Color(0xFF6337FC),
+                                        ])),
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   crossAxisAlignment: CrossAxisAlignment.center,
                                   children: <Widget>[
                                     Row(
-                                      crossAxisAlignment: CrossAxisAlignment.center,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.center,
                                       children: [
                                         Align(
                                           alignment: Alignment.centerLeft,
                                           child: Padding(
-                                            padding: EdgeInsets.only(left: MediaQuery.of(context).size.width * 0.025,),
+                                            padding: EdgeInsets.only(
+                                              left: MediaQuery.of(context)
+                                                      .size
+                                                      .width *
+                                                  0.025,
+                                            ),
                                             child: Container(
-                                              height: MediaQuery.of(context).size.width * 0.07,
-                                              width: MediaQuery.of(context).size.width * 0.07,
+                                              height: MediaQuery.of(context)
+                                                      .size
+                                                      .width *
+                                                  0.07,
+                                              width: MediaQuery.of(context)
+                                                      .size
+                                                      .width *
+                                                  0.07,
                                               decoration: BoxDecoration(
                                                   color: Colors.white,
                                                   borderRadius:
-                                                  BorderRadius.circular(MediaQuery.of(context).size.width * 0.04,)),
+                                                      BorderRadius.circular(
+                                                    MediaQuery.of(context)
+                                                            .size
+                                                            .width *
+                                                        0.04,
+                                                  )),
                                               child: const Icon(
                                                 Icons.navigation,
                                                 size: 18,
-                                                color:Color(0xFF9A3FFA),
+                                                color: Color(0xFF9A3FFA),
                                               ),
                                             ),
                                           ),
                                         ),
                                         SizedBox(
-                                          width: MediaQuery.of(context).size.width * 0.04,
+                                          width: MediaQuery.of(context)
+                                                  .size
+                                                  .width *
+                                              0.04,
                                         ),
-                                        const Text("Explore Tudo", style: TextStyle(
-                                          color: Colors.white,
-                                        ),),
+                                        const Text(
+                                          "Explore Tudo",
+                                          style: TextStyle(
+                                            color: Colors.white,
+                                          ),
+                                        ),
                                       ],
                                     ),
                                   ],

@@ -22,7 +22,7 @@ class _NavigationPageState extends State<NavigationPage> {
     const Invite(),
     const Account(),
   ];
-  int _currentIndex = 1;
+  int _currentIndex = 3;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -56,7 +56,7 @@ class _NavigationPageState extends State<NavigationPage> {
           backgroundColor: Colors.white,
           showUnselectedLabels: true,
           selectedItemColor: const Color(0xFF8740FF),
-          unselectedItemColor: const  Color(0xFFB3B0CD),
+          unselectedItemColor: const Color(0xFFB3B0CD),
           onTap: (index) {
             setState(() {
               _currentIndex = index;
