@@ -88,7 +88,9 @@ class _ExploreState extends State<Explore> {
         ),
       ),
       body: Padding(
-        padding: EdgeInsets.symmetric(horizontal:MediaQuery.of(context).size.width * 0.05,),
+        padding: EdgeInsets.symmetric(
+          horizontal: MediaQuery.of(context).size.width * 0.05,
+        ),
         child: Column(
           children: [
             Container(
@@ -96,7 +98,6 @@ class _ExploreState extends State<Explore> {
               width: MediaQuery.of(context).size.width * 0.90,
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(32.0),
-
                   gradient: const LinearGradient(
                       begin: Alignment.topLeft,
                       end: Alignment.bottomRight,
@@ -107,8 +108,7 @@ class _ExploreState extends State<Explore> {
                         Color(0xFF6337FC),
                       ])),
               child: Column(
-                children: const [
-                ],
+                children: const [],
               ),
             ),
           ],
