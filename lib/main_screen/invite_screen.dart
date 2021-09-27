@@ -122,7 +122,8 @@ class _InviteState extends State<Invite> {
                   child: Column(
                     children: [
                       const Align(
-                          alignment: Alignment.topLeft, child: Text("Invite with code")),
+                          alignment: Alignment.topLeft,
+                          child: Text("Invite with code")),
                       const Spacer(),
                       Row(
                         children: [
@@ -140,7 +141,8 @@ class _InviteState extends State<Invite> {
                               children: <Widget>[
                                 SizedBox(
                                   child: Row(
-                                    crossAxisAlignment: CrossAxisAlignment.center,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.center,
                                     children: [
                                       Align(
                                         alignment: Alignment.centerLeft,
@@ -178,8 +180,9 @@ class _InviteState extends State<Invite> {
                                         ),
                                       ),
                                       SizedBox(
-                                        width: MediaQuery.of(context).size.width *
-                                            0.04,
+                                        width:
+                                            MediaQuery.of(context).size.width *
+                                                0.04,
                                       ),
                                       const Text("My Goals"),
                                     ],
@@ -191,11 +194,15 @@ class _InviteState extends State<Invite> {
                                 ),
                                 const Spacer(),
                                 Padding(
-                                  padding: EdgeInsets.only(right: MediaQuery.of(context).size.width * 0.02,),
+                                  padding: EdgeInsets.only(
+                                    right: MediaQuery.of(context).size.width *
+                                        0.02,
+                                  ),
                                   child: Container(
-                                    height:
-                                    MediaQuery.of(context).size.width * 0.080,
-                                    width: MediaQuery.of(context).size.width * 0.35,
+                                    height: MediaQuery.of(context).size.width *
+                                        0.080,
+                                    width: MediaQuery.of(context).size.width *
+                                        0.35,
                                     decoration: BoxDecoration(
                                         borderRadius: BorderRadius.circular(
                                             MediaQuery.of(context).size.width *
@@ -210,20 +217,22 @@ class _InviteState extends State<Invite> {
                                               Color(0xFF6337FC),
                                             ])),
                                     child: Column(
-                                      mainAxisAlignment: MainAxisAlignment.center,
-                                      crossAxisAlignment: CrossAxisAlignment.center,
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.center,
                                       children: <Widget>[
                                         Row(
                                           crossAxisAlignment:
-                                          CrossAxisAlignment.center,
+                                              CrossAxisAlignment.center,
                                           children: [
                                             Align(
                                               alignment: Alignment.centerLeft,
                                               child: Padding(
                                                 padding: EdgeInsets.only(
                                                   left: MediaQuery.of(context)
-                                                      .size
-                                                      .width *
+                                                          .size
+                                                          .width *
                                                       0.025,
                                                 ),
                                                 child: const Icon(
@@ -251,7 +260,6 @@ class _InviteState extends State<Invite> {
                               ],
                             ),
                           ),
-
                         ],
                       ),
                       const Spacer(),
