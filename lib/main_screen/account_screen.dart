@@ -55,7 +55,7 @@ class _AccountState extends State<Account> {
               children: [
                 Text(
                   "Log-in/Sign-up",
-                  style: GoogleFonts.lato(fontStyle: FontStyle.normal, fontSize: 14, fontWeight: FontWeight.bold),
+                  // style: GoogleFonts.lato(fontStyle: FontStyle.normal, fontSize: 14, fontWeight: FontWeight.bold),
                 ),
                 Icon(
                   Icons.arrow_forward_ios,
