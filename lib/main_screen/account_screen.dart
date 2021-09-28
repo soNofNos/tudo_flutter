@@ -115,10 +115,10 @@ class _AccountState extends State<Account> {
               children: [
                 Text(
                   "All Notifications",
-                  style: GoogleFonts.lato(
-                      fontStyle: FontStyle.normal,
-                      fontSize: 14,
-                      fontWeight: FontWeight.w400),
+                  // style: GoogleFonts.lato(
+                  //     fontStyle: FontStyle.normal,
+                  //     fontSize: 14,
+                  //     fontWeight: FontWeight.w400),
                 ),
               ],
             ),
