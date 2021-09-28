@@ -156,10 +156,10 @@ class _AccountState extends State<Account> {
               children: [
                 Text(
                   "Support",
-                  style: GoogleFonts.lato(
-                      fontStyle: FontStyle.normal,
-                      fontSize: 18,
-                      fontWeight: FontWeight.bold),
+                  // style: GoogleFonts.lato(
+                  //     fontStyle: FontStyle.normal,
+                  //     fontSize: 18,
+                  //     fontWeight: FontWeight.bold),
                 ),
               ],
             ),
