@@ -38,7 +38,7 @@ class _AccountState extends State<Account> {
               children: [
                 Text(
                   "General",
-                  style: GoogleFonts.lato(fontStyle: FontStyle.normal, fontSize: 18, fontWeight: FontWeight.w400),
+                  // style: GoogleFonts.lato(fontStyle: FontStyle.normal, fontSize: 18, fontWeight: FontWeight.w400),
                 ),
               ],
             ),
