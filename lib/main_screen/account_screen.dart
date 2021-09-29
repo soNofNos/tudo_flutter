@@ -173,10 +173,10 @@ class _AccountState extends State<Account> {
               children: [
                 Text(
                   "Feedback",
-                  style: GoogleFonts.lato(
-                      fontStyle: FontStyle.normal,
-                      fontSize: 14,
-                      fontWeight: FontWeight.w400),
+                  // style: GoogleFonts.lato(
+                  //     fontStyle: FontStyle.normal,
+                  //     fontSize: 14,
+                  //     fontWeight: FontWeight.w400),
                 ),
                 Icon(
                   Icons.arrow_forward_ios,
