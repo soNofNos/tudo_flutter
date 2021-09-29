@@ -84,10 +84,10 @@ class _AccountState extends State<Account> {
               children: [
                 Text(
                   "Dark Mode",
-                  style: GoogleFonts.lato(
-                      fontStyle: FontStyle.normal,
-                      fontSize: 15,
-                      fontWeight: FontWeight.w600),
+                  // style: GoogleFonts.lato(
+                  //     fontStyle: FontStyle.normal,
+                  //     fontSize: 15,
+                  //     fontWeight: FontWeight.w600),
                 ),
                 // Icon(
                 //   Icons.swi,
