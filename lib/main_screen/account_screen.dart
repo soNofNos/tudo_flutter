@@ -27,7 +27,6 @@ class _AccountState extends State<Account> {
           color: Colors.grey,
         ),
       ),
-
       //this the body of the app
       body: Container(
         padding: EdgeInsets.only(left: 16, top: 25, right: 16),
