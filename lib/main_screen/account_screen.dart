@@ -85,6 +85,7 @@ class _AccountState extends State<Account> {
                   "Dark Mode",
                   // style: GoogleFonts.lato(
                   //     fontStyle: FontStyle.normal,
+
                   //     fontSize: 15,
                   //     fontWeight: FontWeight.w600),
                 ),
